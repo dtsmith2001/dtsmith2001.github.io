@@ -16,10 +16,61 @@
     </section>
 
     <section class="main-content">
-      <h3>
-<a id="rebuilding" class="anchor" href="#rebuilding" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Rebuilding!</h3>
+      <h1>
+<a id="current-project" class="anchor" href="#current-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Current Project</h1>
 
-<p>I'm in the process of rebuilding this page after a failed edit. I'm not sure what happened but the page just would not render after I made edits using TextEdit on my iMac. Regardless, I've lost some content but will have something up soon, I hope.</p>
+<p>My current project is to investigate computer vision using deep learning, and learn more about TensorFlow and Keras. I've set up an AWS free account and started reading the documentation to learn more about the service, and how to set things up.</p>
+
+<p>A friend advised me to start with the <a href="https://www.kaggle.com/c/diabetic-retinopathy-detection">diabetic retinopathy detection</a> competition. Although the competition is closed, he advised me it's not difficult to get good results, but more difficult to get great results. I'm also interested in investigating <a href="https://arxiv.org/abs/1610.08401">universal adversarial perturbation</a> and see if I can improve the results by expanding the number of images.</p>
+
+<h2>
+<a id="tasks" class="anchor" href="#tasks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tasks</h2>
+
+<ul>
+<li>[x] Created AWS account</li>
+<li>[x] Identified promising project (see below)</li>
+<li>[ ] Download and install Anaconda 3, TensorFlow, and Keras</li>
+<li>[ ] Further investigate the two minute warning for shutting down an instance when bidding on compute time</li>
+<li>[ ] Learn how to process the images themselves</li>
+</ul>
+
+<h2>
+<a id="pre-modeling-the-data" class="anchor" href="#pre-modeling-the-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Pre-modeling the Data</h2>
+
+<p>I'd also like to create a classifier which helps determine if an image is off-center or blurred. I suspect this kind of feature, fed to the deep learning network, could help with detection.</p>
+
+<h1>
+<a id="python" class="anchor" href="#python" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Python</h1>
+
+<p>I'm investigating logging in Python a bit further. I'm looking at <a href="http://stackoverflow.com/questions/8467978/python-want-logging-with-log-rotation-and-compression">timed rotation log handlers with compression</a>. I'll add this to my <a href="https://github.com/dtsmith2001/python-learning-code">Python learning</a> repository.</p>
+
+<h1>
+<a id="dotfiles" class="anchor" href="#dotfiles" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dotfiles</h1>
+
+<p>I'm slowly working on my Linux and OS X dotfiles. This is a particular pain point for me, as I am tired of setting up dotfiles at new jobs. So check out <a href="https://github.com/dtsmith2001/configuration">my dotfiles</a>.</p>
+
+<h1>
+<a id="jupyter-add-ons" class="anchor" href="#jupyter-add-ons" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Jupyter Add-Ons</h1>
+
+<h2>
+<a id="jupyter-themer" class="anchor" href="#jupyter-themer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://github.com/transcranial/jupyter-themer">jupyter-themer</a>
+</h2>
+
+<p>I use <a href="https://github.com/transcranial/jupyter-themer">jupyter-themer</a> to make my notebooks more readable. In particular, I was inspired by <a href="https://github.com/brandon-rhodes" class="user-mention">@brandon-rhodes</a> style sheets found in his <a href="https://github.com/brandon-rhodes/pycon-pandas-tutorial">Pandas tutorial from PyCon 2015</a>. I prefer striped tables myself, so I looked around a bit. I don't know anything about CSS, but I did find a whole <a href="http://www.w3schools.com/css/css_table.asp">list of examples</a>. I made my own stylesheet using Brandon's and added the striped table example. jypyter-themer then copied the style sheet and I'm good to go. I sent a pull request to the maintainer for the <code>hover table</code> layout. You can how install this layout yourself. Beware, if you modify the CSS, you must reinstall jupyter-themer again before you can activate it.</p>
+
+<p>One other thing I learned from <a href="https://github.com/brandon-rhodes" class="user-mention">@brandon-rhodes</a> talk was to use the plot method for DataFrame rather than matplotlib directly. Oh, and I also use seaboard with the ggplot2 theme in my Jupyter notebooks.</p>
+
+<h2>
+<a id="bash-kernel" class="anchor" href="#bash-kernel" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://github.com/takluyver/bash_kernel">bash-kernel</a>
+</h2>
+
+<h1>
+<a id="effective-pandas-by-tomaugspurger" class="anchor" href="#effective-pandas-by-tomaugspurger" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://leanpub.com/effective-pandas">Effective Pandas</a> by <a href="https://github.com/TomAugspurger" class="user-mention">@TomAugspurger</a>
+</h1>
+
+<p>I’ve read parts of this book (which is based on a series or blog posts), and learned a lot. I particularly like method chaining with automatic logging and the pipelines and categorically chapters. Oh, the <a href="https://github.com/TomAugspurger/modern-pandas">notebooks are available</a>.</p>
+
+<p>I wish more authors would turn a series of blog posts into books!</p>
 
       <footer class="site-footer">
 
