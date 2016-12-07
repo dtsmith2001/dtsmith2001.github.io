@@ -45,6 +45,13 @@
 <p>I'd also like to create a classifier which helps determine if an image is off-center or blurred. I suspect this kind of feature, fed to the deep learning network, could help with detection.</p>
 
 <h1>
+<a id="aws-spot-termination-notices" class="anchor" href="#aws-spot-termination-notices" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>AWS Spot Termination Notices</h1>
+
+<p>Amazon now gives you a two minute warning for spot termination notices. Spot instances are only activated or run when the spot price falls below your pre-selected limit. When the spot price rises, the instance is terminated. Before the instance terminates, you need to save your results, log files, etc.</p>
+
+<p>There is a <a href="https://blog.fugue.co/2015-01-06-spot-termination-notices.html">simple way</a> to detect the termination notice. However, I'd like to write a Python 3 module that would handle this in a graceful way, including <code>job lib.dump</code> on my model, save log files, record the record just used in the fit process, etc. That way, the instance could recover on its own and continue the neural network fit.</p>
+
+<h1>
 <a id="python" class="anchor" href="#python" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Python</h1>
 
 <p>I'm investigating logging in Python a bit further. I'm looking at <a href="http://stackoverflow.com/questions/8467978/python-want-logging-with-log-rotation-and-compression">timed rotation log handlers with compression</a>. I'll add this to my <a href="https://github.com/dtsmith2001/python-learning-code">Python learning</a> repository.</p>
