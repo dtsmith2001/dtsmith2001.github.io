@@ -34,7 +34,7 @@ I added [timed rotation log handlers with compression](http://stackoverflow.com/
 
 I am [monitoring my memory usage](http://pythonforbiologists.com/index.php/measuring-memory-usage-in-python/) using the ```resource``` package. It only works on Posix systems, however. I am displaying the maximum memory used during the lifetime of the program, which is very useful when doing grid searches or large number of trees with larger data sets.
 
-And I've also figured out how to [use Jupyter notebooks remotely using ssh tunneling](http://www.datasciencebytes.com/bytes/2015/12/18/using-jupyter-notebooks-securely-on-remote-linux-machines/). It's very simple, and allows me to move my work off my Windows 10 laptop onto a RedHat box with a lot more memory. I;ve had problems lately running out of memory.
+And I've also figured out how to [use Jupyter notebooks remotely using ssh tunneling](http://www.datasciencebytes.com/bytes/2015/12/18/using-jupyter-notebooks-securely-on-remote-linux-machines/). It's very simple, and allows me to move my work off my Windows 10 laptop onto a RedHat box with a lot more memory. I've had problems lately running out of memory.
 
 # Dotfiles
 
