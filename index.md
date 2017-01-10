@@ -6,11 +6,13 @@ A friend advised me to start with the [diabetic retinopathy detection](https://w
 
 Another interesting blog post covers [compressing and regularizing deep neural networks](https://www.oreilly.com/ideas/compressing-and-regularizing-deep-neural-networks).
 
+Sebastian Ruder's article on [gradient descent optimization algorithms](http://sebastianruder.com/optimizing-gradient-descent/index.html) is very interesting.
+
 ## Tasks
 
 - [x] Created AWS account
 - [x] Identified promising project (see below)
-- [ ] AWS [documentation review](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html)
+- [x] AWS [documentation review](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html)
 - [ ] Download and install Anaconda 3, TensorFlow, and Keras
 - [ ] Further investigate the two minute warning for shutting down an instance when bidding on compute time
 - [ ] Learn how to process the images themselves
@@ -28,7 +30,11 @@ There is a [simple way](https://blog.fugue.co/2015-01-06-spot-termination-notice
 
 # Python
 
-I'm investigating logging in Python a bit further. I'm looking at [timed rotation log handlers with compression](http://stackoverflow.com/questions/8467978/python-want-logging-with-log-rotation-and-compression). I'll add this to my [Python learning](https://github.com/dtsmith2001/python-learning-code) repository.
+I added [timed rotation log handlers with compression](http://stackoverflow.com/questions/8467978/python-want-logging-with-log-rotation-and-compression) to my [Python learning](https://github.com/dtsmith2001/python-learning-code) repository.
+
+I am [monitoring my memory usage](http://pythonforbiologists.com/index.php/measuring-memory-usage-in-python/) using the ```resource``` package. It only works on Posix systems, however. I am displaying the maximum memory used during the lifetime of the program, which is very useful when doing grid searches or large number of trees with larger data sets.
+
+And I've also figured out how to [use Jupyter notebooks remotely using ssh tunneling](http://www.datasciencebytes.com/bytes/2015/12/18/using-jupyter-notebooks-securely-on-remote-linux-machines/). It's very simple, and allows me to move my work off my Windows 10 laptop onto a RedHat box with a lot more memory. I;ve had problems lately running out of memory.
 
 # Dotfiles
 
@@ -51,6 +57,10 @@ Enough said.
 I’ve read parts of this book (which is based on a series or blog posts), and learned a lot. I particularly like method chaining with automatic logging and the pipelines and categorically chapters. Oh, the [notebooks are available](https://github.com/TomAugspurger/modern-pandas).
 
 I wish more authors would turn a series of blog posts into books!
+
+# Spark and Cassandra
+
+[Spark and Cassandra](https://academy.datastax.com/resources/getting-started-apache-spark-and-cassandra?unit=getting-started-apache-spark-and-cassandra) are a good alternative to Hadoop as the back-end, especially since Cassandra is familiar to SQL users.
 
 # Debugging RESTful API's with [Postman](https://www.getpostman.com)
 
