@@ -13,7 +13,7 @@ Sebastian Ruder's article on [gradient descent optimization algorithms](http://s
 - [x] Created AWS account.
 - [x] Identified promising project (see below).
 - [x] AWS [documentation review](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html)
-- [ ] Download and install Anaconda 3, TensorFlow, and Keras (I found a [good article](https://eatcodeplay.com/installing-tensorflow-with-python-3-on-ec2-gpu-instances-f9fa199eb3cc#.228nml9j7) on the subject, and there's [another one available](http://ramhiser.com/2016/01/05/installing-tensorflow-on-an-aws-ec2-instance-with-gpu-support/) as well). Perhaps I'll use an available AMI instead of installing my own.
+- [ ] Download and install Anaconda 3, TensorFlow, and Keras. I found a [good article](https://eatcodeplay.com/installing-tensorflow-with-python-3-on-ec2-gpu-instances-f9fa199eb3cc#.228nml9j7) on the subject, and there's [another one available](http://ramhiser.com/2016/01/05/installing-tensorflow-on-an-aws-ec2-instance-with-gpu-support/) as well. Perhaps I'll use an available AMI instead of installing my own.
 - [ ] Further investigate the two minute warning for shutting down an instance when bidding on compute time.
 - [ ] Learn how to process the images themselves using [scikit-image](http://scikit-image.org) and OpenCV.
 - [ ] Paper reviews.
