@@ -1,8 +1,12 @@
 # Current Project
 
-My current project is to investigate computer vision using deep learning, and learn more about TensorFlow and Keras. I've set up an AWS free account and started reading the documentation to learn more about the service, and how to set things up.
+I dropped this project for a while, but I went to a TensorFlow training class last March. And Keras has been adopted by Google as it's front-end to TensorFlow. I'm starting this project up again.
 
 A friend advised me to start with the [diabetic retinopathy detection](https://www.kaggle.com/c/diabetic-retinopathy-detection) competition. Although the competition is closed, he advised me it's not difficult to get good results, but more difficult to get great results. I'm also interested in investigating [universal adversarial perturbation](https://arxiv.org/abs/1610.08401) and see if I can improve the results by expanding the number of images.
+
+Right now, I'm learning how to process images with [skimage](http://scikit-image.org) and ImageMagick.
+
+## A Few Ideas
 
 Another interesting blog post covers [compressing and regularizing deep neural networks](https://www.oreilly.com/ideas/compressing-and-regularizing-deep-neural-networks).
 
@@ -12,21 +16,21 @@ Sebastian Ruder's article on [gradient descent optimization algorithms](http://s
 
 - [x] Created AWS account.
 - [x] Identified promising project (see below).
-- [x] AWS [documentation review](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html)
-- [ ] Download and install Anaconda 3, TensorFlow, and Keras. I found a [good article](https://eatcodeplay.com/installing-tensorflow-with-python-3-on-ec2-gpu-instances-f9fa199eb3cc#.228nml9j7) on the subject, and there's [another one available](http://ramhiser.com/2016/01/05/installing-tensorflow-on-an-aws-ec2-instance-with-gpu-support/) as well. Perhaps I'll use an available AMI instead of installing my own.
 - [ ] Further investigate the two minute warning for shutting down an instance when bidding on compute time.
-- [ ] Learn how to process the images themselves using [scikit-image](http://scikit-image.org) and OpenCV.
+- [x] Learn how to process the images themselves using [scikit-image](http://scikit-image.org) and OpenCV.
 - [ ] Paper reviews.
 
 ## Pre-modeling the Data
 
 I'd also like to create a classifier which helps determine if an image is off-center or blurred. I suspect this kind of feature, fed to the deep learning network, could help with detection.
 
+There are other ideas to investigate.
+
 # AWS Spot Termination Notices
 
 Amazon now gives you a two minute warning for spot termination notices. Spot instances are only activated or run when the spot price falls below your pre-selected limit. When the spot price rises, the instance is terminated. Before the instance terminates, you need to save your results, log files, etc.
 
-There is a [simple way](https://blog.fugue.co/2015-01-06-spot-termination-notices.html) to detect the termination notice. However, I'd like to write a Python 3 module that would handle this in a graceful way, including ```job lib.dump``` on my model, save log files, record the record just used in the fit process, etc. That way, the instance could recover on its own and continue the neural network fit.
+There is a [simple way](https://blog.fugue.co/2015-01-06-spot-termination-notices.html) to detect the termination notice. However, I'd like to write a Python 3 module that would handle this in a graceful way, including ```joblib.dump``` on my model, save log files, record the record just used in the fit process, etc. That way, the instance could recover on its own and continue the neural network fit. It isn't very adaptable to training a neural network, however.
 
 # Python
 
