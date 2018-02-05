@@ -1,16 +1,22 @@
 # Things I've Worked On
 
-I investigated computer vision using deep learning, and to learn more about TensorFlow and Keras.
+I dropped this project for a while, but I went to a TensorFlow training class last March. And Keras has been adopted by Google as it's front-end to TensorFlow.
 
 A friend advised me to start with the [diabetic retinopathy detection](https://www.kaggle.com/c/diabetic-retinopathy-detection) competition. Although the competition is closed, he advised me it's not difficult to get good results, but more difficult to get great results. I'm also interested in investigating [universal adversarial perturbation](https://arxiv.org/abs/1610.08401) and see if I can improve the results by expanding the number of images.
+
+I've experimented with processing images with [skimage](http://scikit-image.org) and ImageMagick.
+
+## A Few Ideas
 
 Another interesting blog post covers [compressing and regularizing deep neural networks](https://www.oreilly.com/ideas/compressing-and-regularizing-deep-neural-networks).
 
 Sebastian Ruder's article on [gradient descent optimization algorithms](http://sebastianruder.com/optimizing-gradient-descent/index.html) is also very interesting.
 
-## Pre-modeling Data
+## Pre-modeling the Data
 
 I'd also like to create a classifier which helps determine if an image is off-center or blurred. I suspect this kind of feature, fed to the deep learning network, could help with detection.
+
+There are other ideas to investigate.
 
 # AWS Spot Termination Notices
 
