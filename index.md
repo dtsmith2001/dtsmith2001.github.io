@@ -1,6 +1,14 @@
-# Things I've Worked On
+# Current Status
+
+I am now a co-founder at a startup, [Vallum Software](https://www.vallumsoftware.com). I am writing mostly in C, but also some C++, and Python. I decided to do any Raspberry PI and Arduino projects at work to illustrate the versatility of our software.
+
+I [answered a question on StackOverflow](https://stackoverflow.com/questions/553784/can-you-use-a-string-to-instantiate-a-class/53693968#53693968). I needed the factory pattern in my own work.
+
+## Diabetic Retinopathy
 
 I dropped this project for a while, but I went to a TensorFlow training class last March. And Keras has been adopted by Google as it's front-end to TensorFlow.
+
+Also, Google has started a product to commercialize this idea.
 
 A friend advised me to start with the [diabetic retinopathy detection](https://www.kaggle.com/c/diabetic-retinopathy-detection) competition. Although the competition is closed, he advised me it's not difficult to get good results, but more difficult to get great results. I'm also interested in investigating [universal adversarial perturbation](https://arxiv.org/abs/1610.08401) and see if I can improve the results by expanding the number of images.
 
@@ -49,10 +57,6 @@ One other thing I learned from @brandon-rhodes talk was to use the plot method f
 ## [bash-kernel](https://github.com/takluyver/bash_kernel)
 
 Enough said.
-
-## R kernel
-
-I always have the R kernel for Jupyter installed as well. It helps facilitate tutorials, and gives me a consistent interface so I can concentrate on the code rather than how to use Jupyter.
 
 # [Effective Pandas](https://leanpub.com/effective-pandas) by @TomAugspurger
 
